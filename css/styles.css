@@ -3,8 +3,13 @@
   color: purple;
 }
 p {
-  font-size: 40px;
+  font-size: 90px;
 }
 body {
   font-family: Nanum Myeongjo;
+  font-size: 80px;
+  background-image: url("/home/salome/Downloads/desktop-background-photo-HD-Desktop-Background-For-Free-Download-In-Hd-throughout-wallpaper-wp1204030.jpg");
+}
+.center {
+  text-align: center;
 }
