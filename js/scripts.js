@@ -1,16 +1,35 @@
+function ping(input){
+  for (var i = 1; i <=input; i++) {
+    if ((i%3===0) && (i%5===0)){
+
+     $(".output").append("<li>"+ "pingpong"+"</li>");
+
+   }else if (i%3===0) {
+
+     $(".output").append("<li>"+"ping"+"</li>");
+   } else if (i%5===0) {
+
+     $(".output").append("<li>"+"pong"+"</li>");
+   }
+   else{
+    
+      $(".output").append("<li>"+i+"</li>");
+    }
+  }//end of for
+}
+//call the function
+
 $(document).ready(function(){
-  var input = parseInt(prompt("enter number"));
-  function pingPongConverter(userInput) {
-    for (var i = 0; i <=userInput; i++) {
-      if ((i%3==0) && (i%5===0)) {
-        console.log("PingPong");
-      }else if (i%3===0) {
-        console.log("ping");
-      }
-    }else if (i%5===0) {
-        console.log("pong");
-      }
-  }
-  pingPongConverter(input);
-  $()
+  //gather user input
+  //var input=parseInt(prompt("Enter the number"));
+  //create a function
+  $("#form").submit(function(){
+    var input=$("#submit").val();
+    ping(input);
+
+    event.preventDefault();
+  });
+
+
+
 });

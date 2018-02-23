@@ -2,32 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>ping-pong</title>
-    <link rel="stylesheet" type="text/css" href="css/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
-    <script type="js/jquery-3.3.1.js"></script>
-    <script type="js/scripts.js"></script>
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link rel="stylesheet" href="/css/styles.css">
+    <title>PING PONG</title>
   </head>
   <body>
     <div class="container-fluid">
-    <h1 class="center">Let,s play!</h1>
-    <h2>Rules</h2>
-    <div class="jumbotron">
-    <p>ping-pong will count up to your number with the following expectations:</p>
-       <div class="col-md-6">
-       <ol>
-         <li>Numbers divisible by 3 become "Ping"</li>
-         <li>Numbers divisible by five become "pong"</li>
-         <li>Numbers divisible by 3 and 5 become "ping-pong"</li>
-       </ol>
+     <div class="row">
+      <div class="jumbotron">
+      <h1><strong><em>PINGPONG</em></strong></h1>
        </div>
-       <form id="pingPongForm">
-         <label></label>
-         <input id="submit" type="text">
-            <button class="btn">Enter number</button>
-       </form>
-         </div>
-       </div>
+      </div>
+     <div class="row">
+      <div class="col-md-6">
+        <h2><strong><em>Rules</em></strong></h2>
+        <h3>Ping Pong will count from one up to your number</h3>
+         <li>
+            <ul>Numbers divisible by 3 become"ping"</ul>
+            <ul>Numbers divisible by 5 become "pong"</ul>
+            <ul>Numbers divisible by 15 become"pingpong"</ul>
+         </li>
+
+      </div>
+      <div class="col-md-6">
+        <div class="text-center">GAME</div>
+        <form id="form">
+        <label></label>
+        <input id="submit" type="number">
+        <button type ="submit">Submit</button>
+      </form>
+      <p>This is your output<span ></span></p>
+      <ul class="output">
+
+      </ul>
+      </div>
+      </div>
+      <div class="row">
+        <h2>About the creator</h2>
+      </div>
+
+  </div>
+
+      <script src="js/jquery-3.3.1.js"></script>
+      <script src="js/scripts.js"></script>
   </body>
 </html>
